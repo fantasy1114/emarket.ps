@@ -1,0 +1,21 @@
+Traced on 2021-04-07 16:15:49
+FileAccessForInclusion - 
+/home1/emarket/public_html/public/palfut/include/utils/CommonUtils.php::checkFileAccessForInclusion::388<br>
+/home1/emarket/public_html/public/palfut/includes/Loader.php::checkFileAccessForInclusion::65<br>
+/home1/emarket/public_html/public/palfut/includes/Loader.php::includeOnce::191<br>
+/home1/emarket/public_html/public/palfut/includes/main/WebUI.php::vimport::15<br>
+/home1/emarket/public_html/public/palfut/index.php::include_once::17<br>
+Traced on 2021-04-08 13:30:00
+FileAccessForInclusion - 
+/home1/emarket/public_html/public/palfut/include/utils/CommonUtils.php::checkFileAccessForInclusion::388<br>
+/home1/emarket/public_html/public/palfut/includes/Loader.php::checkFileAccessForInclusion::65<br>
+/home1/emarket/public_html/public/palfut/includes/Loader.php::includeOnce::191<br>
+/home1/emarket/public_html/public/palfut/includes/main/WebUI.php::vimport::15<br>
+/home1/emarket/public_html/public/palfut/index.php::include_once::17<br>
+Traced on 2021-04-28 07:56:15
+FileAccessForInclusion - 
+/home1/emarket/public_html/public/palfut/include/utils/CommonUtils.php::checkFileAccessForInclusion::388<br>
+/home1/emarket/public_html/public/palfut/includes/Loader.php::checkFileAccessForInclusion::65<br>
+/home1/emarket/public_html/public/palfut/includes/Loader.php::includeOnce::191<br>
+/home1/emarket/public_html/public/palfut/includes/main/WebUI.php::vimport::15<br>
+/home1/emarket/public_html/public/palfut/index.php::include_once::17<br>

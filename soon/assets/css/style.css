@@ -1,0 +1,699 @@
+/* ==============================================
+
+Template: ukieBoy
+Version: 1.0
+Author:	Ukieweb
+
+ - General setting
+ - Button
+ - Header
+ - Boy
+ - Carousel
+ - Subscribe
+ - About Us
+ - Contact Us
+ - Features
+ - Watch
+ - Footer
+ - Overlay
+ - Animationload
+ - Animated setting
+
+================================================ */
+
+
+/* ------------------
+    General setting
+--------------------*/
+*{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+html{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #f6f7f9;
+    font-weight: 600;
+}
+body {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+    background-color: #1b1b32;
+}
+h1 {
+    font-size: 93px;
+    line-height: 96px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 52px;
+    line-height: 72px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    font-weight: 900;
+}
+h3 {
+    font-size: 29px;
+    line-height: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+p, ul, ol, pre, table, blockquote {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+b, strong, em, small, code {
+    line-height: 1;
+}
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub {
+    top: 0.4em;
+}
+
+p{
+    font-weight: 300;
+    color: #8686b0;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.error{
+    border-color: red !important;
+}
+.blue{
+    color: #4aa2d6;
+}
+.violet{
+    color: #8787b0;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #66669c;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #66669c;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #66669c;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #66669c;
+}
+
+
+/* ------------------
+    Button
+--------------------*/
+.btn-soon{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 11px 41px;
+    border-radius: 10px;
+    background: none;
+    display: inline-block;
+    margin: 25px 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-soon:hover{
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-success{
+    border-color: #77D61D !important;
+    color: #77D61D !important;
+    background: url("../img/success-icon.svg") center no-repeat !important;
+    background-size: 15% !important;
+    transition: none !important;
+}
+
+.btn-success:hover{
+    background-color: transparent !important;
+    background: url("../img/success-icon.svg") center no-repeat !important;
+    background-size: 15% !important;
+}
+
+.btn-error{
+    border-color: red !important;
+    color: red !important;
+    background: url("../img/error-icon.svg") center no-repeat !important;
+    background-size: 15% !important;
+    transition: none !important;
+}
+
+.btn-error:hover{
+    background-color: transparent !important;
+    background: url("../img/error-icon.svg") center no-repeat !important;
+    background-size: 15% !important;
+}
+
+
+/* ------------------
+    Header
+--------------------*/
+#header{
+    z-index: 9999;
+    position: relative;
+    padding-top: 29px;
+}
+
+#navigation-menu{
+    margin: 18px;
+}
+#show-mobile-menu{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: none;
+    cursor: pointer;
+    top: 35px;
+    right: 20px;
+}
+.stripe{
+    right: 0px;
+    top: 12px;
+    width: 25px;
+    position: absolute;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    height: 2px;
+    z-index: 99;
+    display: block;
+}
+.stripe:before {
+    top: -8px;
+    height: 4px;
+    content: "";
+    border-top: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    transition: all ease .4s;
+}
+.stripe:after {
+    bottom: -8px;
+    height: 4px;
+    content: "";
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    transition: all ease .4s;
+}
+.navbar-nav{
+    float: none;
+    display: inline-block;
+}
+.navbar-nav > li{
+    margin-right: 3px;
+    display: inline-block;
+}
+.navbar-nav > li > a {
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #8686b0;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 16px;
+    font-weight: 300;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:visited, .navbar-nav > li > a:active, .navbar-nav > li > a:focus{
+    border: 1px solid #4ba1d6;
+    background-color: #4ba1d6;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar-nav a.active{
+    border: 1px solid #4ba1d6;
+    background-color: #4ba1d6;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/* ------------------
+    Boy
+--------------------*/
+.boy{
+    width: 560px;
+    height: 445px;
+    position: relative;
+    margin: 20px auto 0px;
+}
+
+.boy .boy_tv{
+    width: 498px;
+    height: 445px;
+    background-image: url("../img/boy.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: 100%;
+    position: absolute;
+    left: 47px;
+    z-index: 2;
+
+}
+
+.boy .antenna{
+    width: 111px;
+    height: 315px;
+    position: absolute;
+    background-image: url("../img/antenna.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: transparent;
+    background-size: 100%;
+    left: 20px;
+    top: 9px;
+    -moz-animation: 0.5s ease 0s normal none infinite antenna;
+    -moz-transform-origin: center top;
+    -webkit-animation:antenna 0.5s infinite ease-in-out;
+    -webkit-transform-origin:bottom;
+    -o-animation: 0.5s ease 0s normal none infinite antenna;
+    -o-transform-origin: center top;
+    -o-animation:antenna 0.5s infinite ease-in-out;
+    -o-transform-origin:bottom;
+    -ms-animation: 0.5s ease 0s normal none infinite antenna;
+    -ms-transform-origin: center top;
+    -ms-animation:antenna 0.5s infinite ease-in-out;
+    -ms-transform-origin:bottom;
+    animation: 0.5s ease 0s normal none infinite antenna;
+    transform-origin: center top;
+    animation:antenna 0.5s infinite ease-in-out;
+    transform-origin:bottom;
+}
+@-moz-keyframes antenna {
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+@-webkit-keyframes antenna {
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+@-o-keyframes antenna {
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+@-ms-keyframes antenna {
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+@keyframes antenna {
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+.screen{
+    width: 105px;
+    height: 78px;
+    background-image: url("../img/screen.gif");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: transparent;
+    background-size: 100%;
+    position: absolute;
+    right: 77px;
+    bottom: 77px;
+}
+
+/* ------------------
+    Carousel
+--------------------*/
+#carousel{
+    position: relative;
+    z-index: 9999;
+}
+
+
+/* ------------------
+    Subscribe
+--------------------*/
+.subscribe-logo {
+    background: url("../img/logo-subscribe.png") center no-repeat;
+    background-size: 100%;
+    height: 48px;
+    width: 163px;
+    margin: 24px auto 24px;
+}
+.subscribe-text{
+    padding: 0px 100px;
+}
+.subscribe-input{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    background: transparent;
+    width: 368px;
+    height: 48px;
+    color: #66669c;
+    padding: 0 20px;
+    outline: none;
+    background-color: #ffffff;
+    margin: 0 7px;
+}
+.subscribe-submit{
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+    border: 1px solid #4aa2d6;
+    background-color: #4aa2d6;
+    height: 48px;
+    width: 168px;
+    margin: 0 7px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.subscribe-submit:hover{
+    background-color: #3480AD;
+    border: 1px solid #3480AD;
+    color: #ffffff;
+}
+
+.subscribe-input:focus{
+    border: 1px solid #ffffff;
+}
+.subscribe .footerbar{
+    margin-top: 40px;
+}
+
+/* ------------------
+    About Us
+--------------------*/
+.about-logo{
+    background: url("../img/logo-about.png") center no-repeat;
+    background-size: 100%;
+    height: 48px;
+    width: 170px;
+    margin: 24px auto 24px;
+}
+
+/* ------------------
+    Contact Us
+--------------------*/
+
+.contact-logo{
+    background: url("../img/logo-contact.png") center no-repeat;
+    background-size: 100%;
+    height: 48px;
+    width: 124px;
+    margin: 24px auto 24px;
+}
+.contact-text{
+    padding: 0px 100px;
+}
+
+#contact-form{
+    margin: 40px 0 20px;
+}
+
+#contact-form input{
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background: transparent;
+    width: 24%;
+    height: 48px;
+    color: #66669c;
+    background-color: #ffffff;
+    padding: 0 20px;
+    outline: none;
+    margin: 0 15px;
+}
+#contact-form textarea{
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background: transparent;
+    width: 78%;
+    height: 180px;
+    color: #66669c;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    outline: none;
+    margin: 30px 0;
+}
+#contact-form input[type="submit"]{
+    border-radius: 6px;
+    background-color: #4aa2d6;
+    outline: none;
+    color: #fff;
+    border: 1px solid #4aa2d6;
+    height: 48px;
+    width: 168px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+#contact-form input[type="submit"]:hover{
+    background-color: #3480AD;
+    border: 1px solid #3480AD;
+    color: #ffffff;
+}
+
+#contact-form input:focus, #contact-form textarea:focus{
+    border: 1px solid #ffffff;
+}
+
+/* ------------------
+    Features
+--------------------*/
+.features-logo{
+    background: url("../img/logo-features.png") center no-repeat;
+    background-size: 100%;
+    height: 48px;
+    width: 196px;
+    margin: 24px auto 24px;
+}
+
+.features-text{
+    min-height: 255px;
+}
+
+.features-text img{
+    width: 46px;
+    margin-right: 20px;
+}
+
+
+
+/* ------------------
+    Watch
+--------------------*/
+#watch{
+    color: #f6f7f9;
+}
+
+
+#watch .dash{
+    display: inline-block;
+    width: auto;
+    padding: 31px 25px 0;
+    height: 168px;
+    line-height: 62px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0px 12px;
+}
+
+#watch .dash .digit {
+    display: block;
+    font-size: 100px;
+    line-height: 79px;
+    height: 81px;
+    float: left;
+}
+
+#watch .dash .digit .top, #watch .dash .digit .bottom{
+    font-weight: 900;
+}
+
+#watch .dash span.dash_title{
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 15px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    clear: both;
+}
+
+
+/* ------------------
+    Footer
+--------------------*/
+#footer{
+    z-index: 9999;
+    position: relative;
+    margin-top: 24px;
+}
+.footer_text{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact_socials{
+    padding: 0;
+    margin: 0;
+}
+
+.contact_socials li{
+    display: inline-block;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #8686b0;
+}
+
+.footer_socials {
+    margin: 25px 0 50px;
+}
+
+.ukie_social{
+    font-size: 16px;
+    color: #8686b0;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    display: block;
+    margin: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.ukie_social:hover, .ukie_social:active, .ukie_social:focus{
+    color: #ffffff;
+}
+
+/* ------------------
+    Overlay
+--------------------*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.gradient-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.opacity-80{
+    opacity: 0.8;
+}
+
+/* ------------------
+    Animationload
+--------------------*/
+.animationload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 999999;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/ajax-loader.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------
+    Animated setting
+--------------------*/
+.animated{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}

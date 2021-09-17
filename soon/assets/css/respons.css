@@ -1,0 +1,159 @@
+/* Start media ( max = 768px ) */
+@media (max-width: 768px) {
+
+/* ------------------
+    Generation settings
+--------------------*/
+    .navbar-nav > li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .navbar-nav > li:last-child{
+        margin: 0;
+    }
+    #show-mobile-menu{
+        display: inline-block;
+    }
+    #navigation-menu {
+        display: block;
+    }
+    #navigation-menu.active-menu{
+        display: inline-block;
+    }
+    #carousel{
+        margin: 30px 0;
+    }
+/* ------------------
+    Subscribe
+--------------------*/
+    .subscribe-input{
+        width: 90%;
+        padding: 0px 5%;
+        margin-bottom: 25px;
+    }
+
+    .subscribe-text {
+        padding: 0px 20px;
+    }
+
+/* ------------------
+    About Us
+--------------------*/
+    .about-text {
+        text-align: center;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-color: #6E6E94;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .about-text:last-child{
+        border: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+/* ------------------
+    Contact Us
+--------------------*/
+    .contact-text {
+        padding: 0px 20px;
+    }
+
+    #contact-form input {
+        width: 90%;
+        padding: 0 5%;
+        margin-bottom: 20px;
+    }
+
+    #contact-form textarea{
+        width: 90%;
+        padding: 5%;
+        margin-top: 0px;
+    }
+
+
+/* ------------------
+    Features
+--------------------*/
+    .features-text {
+        border-right: 0;
+        min-height: 20px;
+        text-align: center;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-color: #6E6E94;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .features-text:last-child {
+        border: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media (max-width: 468px) {
+
+    h2 {
+        font-size: 43px;
+        line-height: 60px;
+    }
+
+    .navbar{
+        margin-bottom: 0;
+    }
+
+    .boy {
+        width: 370px;
+        height: 328px;
+    }
+
+    .navbar-nav > li > a {
+        padding: 3px 3px;
+        font-size: 14px;
+    }
+
+    .boy .boy_tv {
+        width: 300px;
+        height: 326px;
+    }
+
+    .screen{
+        width: 63px;
+        height: 78px;
+        right: 46px;
+        bottom: 16px;
+    }
+
+    .boy .antenna {
+        width: 81px;
+        height: 230px;
+        left: 18px;
+        top: 32px;
+    }
+
+    #carousel{
+        margin: 0;
+    }
+
+    #watch .dash {
+        width: auto;
+        padding: 0px 5px 0px;
+        height: 135px;
+        line-height: 62px;
+        margin: 0px 12px;
+    }
+
+    #watch .dash .digit {
+        font-size: 72px;
+        line-height: 79px;
+        height: 81px;
+    }
+
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body style="text-align: center; padding-top: 70px;">
+    <h1 style="color: black; text-decoration: underline;">E-Commerce Product Inventory Management Tool</h1><br><br>
+    <form method="POST" action="" id="form">
+      1) <button type="button" onclick="submitForm('AhmadD.cgi')">Update/Synchronize All Products and Determine Max Value</button><br><br>
+      2) <input type="text" name="sku" class="form-control" placeholder="swdress23210519614" minlength="5" style="width: 300px; text-align: center; margin-left: 700px; height: 30px;"><br>
+      <button type="button" onclick="submitForm('AhmadD2.cgi')">Add New Product</button><br><br>
+      3) <button type="button" onclick="submitForm('AhmadD3.cgi')">Upload to cPanel</button><br><br>
+      4) <button type="button" onclick="submitForm('AhmadD4.cgi')">Clear Max Table</button><br><br>
+      5) <button type="button" onclick="submitForm('AhmadD5.cgi')">Clear Products Table</button><br><br>
+    </form>
+    <script type="text/javascript">
+      function submitForm(url){
+          var data = $("#form").serialize();
+          $.ajax({
+              type : 'POST',
+              url  : url,
+              data : data,
+              success :  function(data){
+                  alert(data);
+              }
+          });
+      }
+    </script>
+  </body>
+</html>
